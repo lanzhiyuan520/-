@@ -1,0 +1,41 @@
+<image class="back" src="/assets/bg.jpg"></image>
+<view class="progress-wrap page bg-black" wx:if="{{!isEnd}}">
+    <view class="progress-main {{isPause?'pause':''}} {{isSkip?'skip':''}} {{isRight?'right':''}} {{direction>0?'':'rotate'}}">
+        <image bindtap="onReadyEnd" class="end-img" hidden="{{!showButton}}" src="/guess/assets/close_guide.png"></image>
+        <image bindtap="onTogglePause" class="status-img" hidden="{{!showButton}}" src="/guess/assets/icon_{{isPause?'play':'pause'}}.png"></image>
+        <view class="countdown-wrap flex column j-c" wx:if="{{startCountdown>0}}">
+            <image class="countdown-img" src="/guess/assets/countdown_{{startCountdown}}.png"></image>
+            <image class="start-txt" src="/guess/assets/start_txt.png"></image>
+        </view>
+        <view class="playing-wrap flex column j-c" wx:if="{{playCountdown}}">
+            <image class="pause-txt" src="/guess/assets/pause_txt.png" wx:if="{{isPause}}"></image>
+            <image class="skip-txt" src="/guess/assets/skip_txt.png" wx:if="{{isSkip}}"></image>
+            <image class="right-txt" src="/guess/assets/right_txt.png" wx:if="{{isRight}}"></image>
+            <view class="words bold white center" wx:if="{{!isPause&&!isSkip&&!isRight}}">{{words}}</view>
+            <view class="playing-countdown center white" wx:if="{{!isSkip&&!isRight}}">{{playCountdown}}</view>
+            <view class="next-hint center {{isSkip?'skip':''}} {{isRight?'right':''}}" wx:if="{{isSkip||isRight}}">翻转屏幕进入下一题</view>
+        </view>
+    </view>
+</view>
+<block wx:else>
+    <nav bgColor="transparent" title="你演我猜"></nav>
+    <view class="end-wrap page flex column {{isIpx?'ipx':''}}">
+        <image class="end-title" src="/guess/assets/end_title.png"></image>
+        <view class="result-wrap">
+            <view class="result-placeholder"></view>
+            <view class="result-list" style="height: {{(isIpx?200:0)+500}}rpx;">
+                <view class="result-item flex" wx:for="{{results}}" wx:key="index">
+                    <image class="result-img {{item.right?'right':'error'}}" src="/guess/assets/result_{{item.right?'right':'error'}}.png"></image>
+                    <text class="result-words">{{item.words}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="result-desc bold white fz-32">答对
+      <text class="strong">{{rightCount}}</text>题，用时
+      <text class="strong">{{playTime}}</text>秒</view>
+        <view class="flex btns">
+            <image bindtap="onAgain" class="btn-again" src="/guess/assets/btn_again.png"></image>
+            <image bindtap="onPunishment" class="btn-punishment" src="/guess/assets/btn_punishment.png"></image>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#120d0a",
+    "navigationStyle": "custom",
+    "disableScroll": true,
+    "usingComponents": {
+        "nav": "/pages/comps/nav/nav",
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

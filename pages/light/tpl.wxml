@@ -1,0 +1,22 @@
+<template name="coverComp">
+    <cover-view bindtap="onShowMenu" class="light" style="opacity:{{ShowCamera?0.4:1}}; animation: {{StyleList[StyleIdx]}} {{SpeedList[SpeedIdx]}}s infinite;"></cover-view>
+    <cover-view catchtap="onBack" class="back-img {{isIpx?'ipx':''}}" wx:if="{{ShowMenu}}">
+        <cover-image src="/assets/back.png"></cover-image>
+    </cover-view>
+    <cover-view class="menu flex" style="animation: {{ShowMenu?'rise':'fall'}} 0.5s; animation-fill-mode: forwards;">
+        <cover-view bindtap="onChangeStyle" class="item">
+            <cover-view class="value">{{StyleIdx+1}}</cover-view>
+            <cover-image class="style" src="../../assets/light/style.png"></cover-image>
+            <cover-view class="title">样式</cover-view>
+        </cover-view>
+        <cover-view bindtap="onChangeSpeed" class="item">
+            <cover-view class="value">{{SpeedIdx+1}}</cover-view>
+            <cover-image class="style" src="../../assets/light/speed.png"></cover-image>
+            <cover-view class="title">速度</cover-view>
+        </cover-view>
+        <cover-view bindtap="onReadyCamera" class="item">
+            <cover-image class="style" src="../../assets/light/camera.png"></cover-image>
+            <cover-view class="title">相机</cover-view>
+        </cover-view>
+    </cover-view>
+</template>

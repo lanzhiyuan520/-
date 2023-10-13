@@ -1,0 +1,27 @@
+<ad-screen></ad-screen>
+<view class="container">
+    <nav bgColor="transparent"></nav>
+    <image class="back" src="/assets/bg.jpg"></image>
+    <view class="title-box" style="top: 70rpx; left: 30rpx;">
+        <view class="calculator">
+            <image bindtap="handlerReduce" class="reduce" src="../../assets/image/home/reduce.png"></image>
+            <text class="number">{{diceNumber}}</text>
+            <image bindtap="handlerPlus" class="plus" src="../../assets/image/home/plus@2x.png"></image>
+        </view>
+        <image class="tip" src="{{curStatusImg}}" style="display:{{curDiceStatus?'block':'none'}}"></image>
+    </view>
+    <view class="content" style="top:100rpx">
+        <view class="total-bg" style="display:{{isShowTotal?'flex':'none'}};top:140rpx">
+            <text class="total-number">{{totalNum}}</text>
+            <text class="total-dot">点</text>
+        </view>
+        <image class="{{animateClass}} icon-dice" src="{{item.src}}" style="left:{{item.left}}px;bottom:{{item.bottom}}px;opacity:{{item.opacity}}" wx:for="{{curDices}}" wx:key="{{item.key}}"></image>
+    </view>
+    <view class="footer">
+        <image bindtap="handlerSetup" class="icon-set" src="../../assets/image/home/set@2x.png"></image>
+        <image bindtap="handlerPlay" class="icon-play {{diceClass}}" src="../../assets/image/home/play@2x.png"></image>
+        <button class="icon-more" openType="share">
+            <image src="../../assets/image/home/pk.png"></image>
+        </button>
+    </view>
+</view>

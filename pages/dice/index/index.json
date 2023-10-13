@@ -1,0 +1,10 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "酒桌玩筛子",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000",
+    "navigationStyle": "default",
+    "usingComponents": {
+        "ad-screen": "../../comps/adScreen/adScreen"
+    }
+}

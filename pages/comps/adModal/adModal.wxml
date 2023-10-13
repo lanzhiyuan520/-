@@ -1,0 +1,15 @@
+<cover-view class="modal-wrap" hidden="{{!show}}">
+    <cover-view class="modal-main {{!showAdPay?'review':''}}">
+        <cover-view class="modal-title">提示</cover-view>
+        <cover-view class="modal-desc">
+            <cover-view>今日免费次数已用完</cover-view>
+            <cover-view>看视频得无限畅玩特权</cover-view>
+        </cover-view>
+        <cover-view catchtap="onLookVideo" class="btn-unlock">看视频解锁</cover-view>
+        <cover-view catchtap="onRemoveAd" class="remove-wrap" wx:if="{{showAdPay}}">
+            <cover-view class="btn-remove">永久去广告</cover-view>
+            <cover-view class="price">限时￥18</cover-view>
+        </cover-view>
+    </cover-view>
+    <cover-view catchtap="onCloseModal" class="think">我再想想</cover-view>
+</cover-view>

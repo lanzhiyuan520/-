@@ -1,0 +1,120 @@
+.title-img {
+    width: 410rpx;
+    height: 166rpx;
+}
+
+.words-list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 8rpx 20rpx;
+}
+
+.words-item {
+    width: 200rpx;
+    border-radius: 30rpx;
+    line-height: 116rpx;
+    margin-top: 40rpx;
+    text-align: center;
+    background-color: #fff;
+    font-size: 32rpx;
+    border: 8rpx solid transparent;
+    color: #602902;
+}
+
+.words-item.placeholder {
+    visibility: hidden;
+}
+
+.words-item.selected {
+    border-color: #fff;
+    background-color: #602902;
+    color: #fff;
+}
+
+.bottom-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.edit-icon {
+    width: 36rpx;
+    height: 36rpx;
+    margin-left: 18rpx;
+}
+
+.start-game {
+    width: 348rpx;
+    height: 142rpx;
+    display: block;
+    margin: 42rpx auto 45rpx;
+}
+
+.bottom-bar {
+    width: 100%;
+    height: 50rpx;
+    display: block;
+    margin-top: 44rpx;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.guide-wrap {
+    width: 100%;
+    height: 1242rpx;
+    position: fixed;
+    left: calc(50% + 12rpx);
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.guide-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 220rpx 60rpx 0;
+    text-align: center;
+}
+
+.close-img {
+    position: absolute;
+    width: 68rpx;
+    height: 68rpx;
+    padding: 20rpx;
+    right: 52rpx;
+    top: 220rpx;
+}
+
+.guide-desc {
+    font-size: 26rpx;
+    color: #f5f5f5;
+    margin-top: 36rpx;
+    text-align: left;
+}
+
+.guide-1 {
+    width: 316rpx;
+    height: 154rpx;
+    margin: 36rpx auto 0;
+}
+
+.guide-2 {
+    width: 438rpx;
+    height: 230rpx;
+    margin: 10rpx auto 0;
+}
+
+.guide-3 {
+    width: 552rpx;
+    height: 156rpx;
+    margin: 18rpx auto 0;
+}
+
+.guide-hint {
+    font-size: 26rpx;
+    color: hsla(0,0%,96.1%,.5);
+    margin-top: 30rpx;
+}

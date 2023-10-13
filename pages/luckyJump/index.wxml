@@ -1,0 +1,10 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent" bindOnBack="onExit" selfBack="{{true}}"></nav>
+<view id="pagewrap" style="position:fixed;height:100%;width:100%;left:0;top:0;">
+    <image class="mainbg" mode="aspectFill" src="/assets/bg.jpg"></image>
+    <image animation="{{rotateanimation}}" bindtap="rotate" id="beerbottle" mode="aspectFit" src="/assets/beerbottle.png" style="height:750rpx;width:750rpx;position:absolute;left:0;top:{{topset}}px;z-index: 2;"></image>
+    <view style=" padding: 0 50rpx; text-align: center; font-size: 32rpx; color: white; height:150rpx;position:absolute;left:0;bottom:50rpx;z-index: 1;">
+      温馨提示：大家围坐一起，点击棒球棒。手把对着谁停了下来。这一局挑战真心话和大冒险的人就是TA！
+      <span bindtap="toTrueWords">点击去玩真心话大冒险</span>
+    </view>
+</view>

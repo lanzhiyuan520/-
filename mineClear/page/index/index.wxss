@@ -1,0 +1,88 @@
+page {
+    width: 750rpx;
+    height: 100%;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+
+.wrapper {
+    padding-top: 126rpx;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    line-height: 1em;
+    width: 90%;
+}
+
+.flex-item {
+    border-radius: 10rpx;
+    background: #e6e9ed;
+    margin: 1px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    flex: 1 0 auto;
+    height: 88rpx;
+    width: 88rpx;
+    font-family: Lucida Console,Monaco,monospace;
+}
+
+.open {
+    background: #3bafda;
+}
+
+.mine {
+    background: #e9573f;
+}
+
+.flag {
+    background: #f6bb42;
+}
+
+.flex-item:before {
+    content: "";
+    display: block;
+    float: left;
+    padding-top: 100%;
+}
+
+.header {
+    display: flex;
+    font-size: 14px;
+    line-height: 2.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.header .label {
+    flex: 1;
+}
+
+.footer {
+    padding-top: 50rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-hover {
+    background-color: #d3d3d3;
+}
+
+.tips {
+    margin-top: 20px;
+    padding: 0 0 0 20px;
+    font-size: 23rpx;
+    color: #8d8d8d;
+}
+
+.start-button {
+    font-size: 30rpx!important;
+    border-radius: 16rpx;
+}

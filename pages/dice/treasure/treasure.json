@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "宝典及攻略",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000",
+    "navigationStyle": "default",
+    "usingComponents": {
+        "ad-screen": "../../comps/adScreen/adScreen"
+    }
+}

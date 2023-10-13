@@ -1,0 +1,131 @@
+.row .row-bg {
+    width: 715rpx;
+    height: 122rpx;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.container .content {
+    width: 100%;
+    height: 100%;
+    padding-top: 113rpx;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.row {
+    font-size: 31rpx;
+    line-height: 30rpx;
+    color: #ffebae;
+    margin-top: 10rpx;
+    margin-left: 18rpx;
+    width: 717rpx;
+    height: 117rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.big-row {
+    display: block;
+    text-align: left;
+}
+
+.row .row-icon {
+    width: 45rpx;
+    height: 46rpx;
+}
+
+.row .row-title {
+    margin-left: 7rpx;
+}
+
+.row .icon-status {
+    width: 154rpx;
+    height: 71rpx;
+    position: absolute;
+    right: 18rpx;
+    top: 21repx;
+}
+
+.sound-box {
+    margin-top: 0rpx!important;
+}
+
+.color-box {
+    height: 429rpx;
+}
+
+.color-box .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.color-box .btn-container .ctl-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 549rpx;
+    margin-top: 64rpx;
+}
+
+.color-box .btn-container .ctl-box .btn-left,.color-box .btn-container .ctl-box .btn-right {
+    width: 104rpx;
+    height: 104rpx;
+}
+
+.color-box .btn-container .ctl-box .color-img,.color-box .btn-container .ctl-box .img-box {
+    width: 141rpx;
+    height: 141rpx;
+}
+
+.row .row-icon {
+    width: 42rpx;
+    height: 40rpx;
+    margin-left: 32rpx;
+}
+
+.row .icon-wechat {
+    width: 51rpx;
+    height: 41rpx;
+    margin-left: 280rpx;
+}
+
+.row .text-right {
+    margin: 0 20rpx 0 8rpx;
+}
+
+.row .icon-right {
+    width: 22rpx;
+    height: 29rpx;
+    position: absolute;
+    right: 40rpx;
+    top: 46rpx;
+}
+
+.row .btn-row {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+ad {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

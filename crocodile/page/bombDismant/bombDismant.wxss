@@ -1,0 +1,173 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+.backimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.backbutton {
+    left: 6%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.backbutton,.helpbutton {
+    position: fixed;
+    top: 3%;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+}
+
+.helpbutton {
+    left: 85.3%;
+}
+
+.juemingzhadan {
+    position: fixed;
+    top: 37.7%;
+    left: 20.8%;
+    z-index: 3;
+    width: 58.6%;
+    height: 12.2%;
+}
+
+.tips {
+    top: 17.4%;
+    left: 14.7%;
+    z-index: 10;
+    width: 70.6%;
+    height: 65%;
+}
+
+.close,.tips {
+    position: fixed;
+}
+
+.close {
+    top: 20.6%;
+    left: 75.8%;
+    z-index: 11;
+    width: 5.2%;
+    height: 3%;
+}
+
+.again_back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+}
+
+.again {
+    left: 22%;
+    bottom: 250rpx;
+    width: 56%;
+    height: 8%;
+    z-index: 16;
+}
+
+.add,.again {
+    position: fixed;
+}
+
+.add {
+    width: 80%;
+    float: left;
+    text-align: center;
+    bottom: 20rpx;
+    z-index: 17;
+}
+
+.boom {
+    position: fixed;
+    top: 20.9%;
+    left: 25.8%;
+    width: 48.7%;
+    height: 48.6%;
+    z-index: 2;
+}
+
+.time {
+    top: 38%;
+    left: 48.6%;
+    width: 12.5%;
+    height: 17.4%;
+}
+
+.c,.time {
+    position: fixed;
+    z-index: 3;
+}
+
+.c1 {
+    top: 55.8%;
+    left: 48.8%;
+    width: 14%;
+    height: 27.8%;
+}
+
+.c2 {
+    top: 53.2%;
+    width: 30.1%;
+    height: 23.5%;
+}
+
+.c2,.c3 {
+    left: 62.2%;
+}
+
+.c3 {
+    top: 44.6%;
+    width: 33%;
+    height: 5.8%;
+}
+
+.c4 {
+    top: 23.2%;
+    left: 62.2%;
+    width: 33.1%;
+    height: 14.4%;
+}
+
+.c5 {
+    top: 9.1%;
+    left: 42%;
+    width: 10.2%;
+    height: 25.7%;
+}
+
+.c6 {
+    top: 14.6%;
+    left: 1.5%;
+    width: 36.6%;
+    height: 23.2%;
+}
+
+.c7 {
+    top: 41.7%;
+    left: 2.8%;
+    width: 35.8%;
+    height: 5.3%;
+}
+
+.c8 {
+    top: 53%;
+    left: 13.2%;
+    width: 25.2%;
+    height: 27.9%;
+}

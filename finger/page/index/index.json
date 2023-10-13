@@ -1,0 +1,8 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "指尖轮盘",
+    "usingComponents": {
+        "nav": "/pages/comps/nav/nav",
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

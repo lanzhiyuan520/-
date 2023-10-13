@@ -1,0 +1,49 @@
+<view class="container">
+    <view class="gate-layout">
+        <view class="gate-top">
+            <view class="gate-num">
+                <view>
+                    <text>{{gateNum}}/{{maxGate}}</text>
+                </view>
+            </view>
+            <view class="gate-time">
+                <view>
+                    <text>{{countDown}}秒</text>
+                </view>
+            </view>
+            <image bindtap="onStop" class="gate-stop" src="../../images/stop.png"></image>
+        </view>
+        <text class="tips">找出所有色块里颜色不同的一个</text>
+        <view class="box {{lv}}">
+            <block wx:if="{{!gameStop}}">
+                <view bindtap="onNext" data-index="{{index}}" style="background-color: {{color}}" wx:for="{{list}}" wx:for-item="color" wx:key="colorId"></view>
+            </block>
+        </view>
+        <view class="bar-img">
+            <image src="../../images/bar.png"></image>
+        </view>
+    </view>
+</view>
+<block wx:if="{{gameStop}}">
+    <view class="wrap-bk"></view>
+    <view class="stop-wrap">
+        <text class="stop-text">闯关暂停</text>
+        <image bindtap="onStart" class="stop-start-img" src="../../images/start-s.png"></image>
+        <button bindtap="onStart" class="btn-none start-game" hoverClass="navigator-hover">继续闯关</button>
+    </view>
+</block>
+<block wx:if="{{showRevive}}">
+    <view class="wrap-bk"></view>
+    <view class="game-result best-result animated {{reviveShow?'zoomIn':'zoomOut'}}">
+        <view class="result-content best-content">
+            <image bindtap="restart" class="close-img" src="../../images/btn_close.png"></image>
+            <view bindtap="restart" class="close-view"></view>
+            <view class="revive-img">
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <text class="revive-text">通关: {{result.nowgate}}</text>
+            <text class="revive-text">时长: {{result.nowtime}}秒</text>
+            <button bindtap="restart" class="btn-none restart" hoverClass="navigator-hover"></button>
+        </view>
+    </view>
+</block>

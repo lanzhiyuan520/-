@@ -1,0 +1,151 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/handBarrage/handBarrage",
+    "pages/light/light",
+    "pages/gf/gf",
+    "pages/dice/index/index",
+    "pages/dice/setting/setting",
+    "pages/dice/skin/index",
+    "pages/dice/treasure/treasure",
+    "pages/diceBowl/index",
+    "pages/digitalBomb/index",
+    "pages/luckyJump/index",
+    "pages/roulette/roulette"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#743814",
+    "list": [
+      {
+        "pagePath": "pages/dice/index/index",
+        "text": "摇骰子",
+        "iconPath": "assets/tabIcon/dice.png",
+        "selectedIconPath": "assets/tabIcon/seleDice.png"
+      },
+      {
+        "pagePath": "pages/dice/skin/index",
+        "text": "领取皮肤",
+        "iconPath": "assets/tabIcon/skin.png",
+        "selectedIconPath": "assets/tabIcon/seleSkin.png"
+      },
+      {
+        "pagePath": "pages/diceBowl/index",
+        "text": "七八九",
+        "iconPath": "assets/tabIcon/bowDice.png",
+        "selectedIconPath": "assets/tabIcon/seleBowDice.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "大玩家",
+        "iconPath": "assets/tabIcon/game.png",
+        "selectedIconPath": "assets/tabIcon/seleGame.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "guess/",
+      "name": "guess",
+      "pages": [
+        "page/index/index",
+        "page/progress/progress"
+      ]
+    },
+    {
+      "root": "square/",
+      "name": "square",
+      "pages": [
+        "page/index/index",
+        "page/game/game"
+      ]
+    },
+    {
+      "root": "time/",
+      "name": "time",
+      "pages": [
+        "page/index/index"
+      ]
+    },
+    {
+      "root": "finger/",
+      "name": "finger",
+      "pages": [
+        "page/index/index"
+      ]
+    },
+    {
+      "root": "secondary/",
+      "name": "secondary",
+      "pages": [
+        "page/punishment/punishment",
+        "page/surrender/surrender",
+        "page/webView/webView"
+      ]
+    },
+    {
+      "root": "confrontation/",
+      "name": "confrontation",
+      "pages": [
+        "page/index/index"
+      ]
+    },
+
+    {
+      "root": "deskmate/",
+      "name": "deskmate",
+      "pages": [
+        "page/index/index"
+      ]
+    },
+    {
+      "root": "mineClear/",
+      "name": "mineClear",
+      "pages": [
+        "page/index/index"
+      ]
+    },
+    {
+      "root": "throwDice/",
+      "name": "throwDice",
+      "pages": [
+        "page/index/index",
+        "page/setting/setting"
+      ]
+    },
+    {
+      "root": "personal/",
+      "name": "personal",
+      "pages": [
+        "page/index/index",
+        "page/taskCenter/taskCenter"
+      ]
+    },
+    {
+      "root": "crocodile/",
+      "name": "crocodile",
+      "pages": [
+        "page/index/index",
+        "page/bombDismant/bombDismant"
+      ]
+    },
+    {
+      "root": "differ/",
+      "name": "differ",
+      "pages": [
+        "page/index/index",
+        "page/game/game"
+      ]
+    }
+  ],
+
+  
+  "navigateToMiniProgramAppIdList": [
+    ""
+  ],
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,16 @@
+<view class="con">
+    <view bindtap="onClick" data-id="{{item.Id}}" data-state="{{item.state}}" wx:for="{{list}}" wx:key="index">
+        <view class="diceSele {{item.state==2?'diceSeleCol':''}}">
+            <image src="http://pic.lanzhiyuan99.cn/image/{{item.Id}}.png"></image>
+            <text wx:if="{{item.state==2||item.state==1}}">永久</text>
+            <view wx:if="{{item.state==0}}"></view>
+        </view>
+        <span style="color: {{item.state==2?'#f7ea84':''}}">{{item.Name}}</span>
+        <view class="">
+            <view class="buy-now" wx:if="{{item.state==0}}">免费领取</view>
+            <view class="use-now" wx:elif="{{item.state==2}}">使用中</view>
+            <view class="use-on" wx:else>使用骰盅</view>
+        </view>
+    </view>
+    <ad-custom unit-id="adunit-3041a67d9793b3ec"></ad-custom>
+</view>

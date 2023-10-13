@@ -1,0 +1,7 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "幸运轮盘",
+    "usingComponents": {
+        "nav": "/pages/comps/nav/nav"
+    }
+}

@@ -1,0 +1,40 @@
+<image class="background" src="/assets/bg.jpg"></image>
+<nav bgColor="transparent" title=""></nav>
+<view class="wrapper">
+    <view class="container-turn">
+        <image class="selected-image {{isEnd?'end':''}}" src="/pages/img/roulette_selected.png">
+            <text class="selected-text">{{showConten}}</text>
+        </image>
+        <view class="chooseto"></view>
+        <!-- <button class="btn1" openType="share">
+            <image class="btnImg" src="/pages/img/tuijian.png"></image>
+            <view>邀请好友</view>
+        </button> -->
+        <view class="canvas-container">
+            <view animation="{{animationData}}" class="canvas-content">
+                <canvas canvasId="lotteryCanvas" class="canvas-element" style="width: 300px; height: 300px;"></canvas>
+                <view class="canvas-line">
+                    <view class="canvas-litem" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})" wx:for="{{awardsList}}" wx:key="unique"></view>
+                </view>
+                <view class="canvas-list">
+                    <view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+                        <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</view>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="getLottery" class="kaishi">
+                <view class="sanjiao"></view>
+            </view>
+        </view>
+    </view>
+           <view class="but_v">
+          <button class="btn1" openType="share">
+                <!-- <image class="btnImg" src="/pages/img/tuijian.png"></image> -->
+                <view>邀请好友</view>
+            </button>
+        </view>
+</view>
+
+<view class="ggad">
+    <ad unit-id="adunit-5d23d13958909d8f"></ad>
+</view> 

@@ -1,0 +1,33 @@
+<ad-screen></ad-screen>
+<ad-custom style="z-index: 1000; position: fixed; bottom: 150rpx; right:15rpx;" unitId="adunit-cef3b88bb296cc7d"></ad-custom>
+<view class="container">
+    <view class="title">
+        <view>酒桌玩筛子怎么玩，必胜攻略交给你！</view>
+        <text>你知道在酒吧、KTV玩骰子的最高境界是什么吗？不知道，今天小编告诉你怎么样成为一个玩骰子的高手，那就是自己摇到什么点数不重要，关键是要猜中别人有什么，没有什么，这样才能做到战无不胜，攻无不破！</text>
+        <text style="color: #39f;text-decoration:underline;">必胜攻略 ↓</text>
+    </view>
+    <view wx:for="{{treasure}}" wx:key="index">
+        <view class="item-mou">
+            <view class="title-word">
+                <image class="wordBorder" src="/assets/dice/wordBorder.png"></image>
+                <view class="word">{{item.title}}</view>
+            </view>
+            <view class="text2">
+                <view wx:for="{{item.text}}" wx:key="index">{{item}}</view>
+            </view>
+        </view>
+        <ad adTheme="white" adType="video" unitId="adunit-e3dd54dd8a49659b" wx:if="{{index%5==0}}"></ad>
+    </view>
+    <ad adTheme="white" adType="video" unitId="adunit-e3dd54dd8a49659b"></ad>
+    <view class="item-mou" id="position" wx:for="{{strategy}}" wx:key="index">
+        <view class="title-word">
+            <image class="wordBorder" src="/assets/dice/wordBorder.png"></image>
+            <view class="word">{{item.title}}</view>
+        </view>
+        <view class="text">
+            <view wx:for="{{item.text}}" wx:key="index">{{item}}</view>
+        </view>
+    </view>
+    <button class="share" openType="share">分享给朋友</button>
+    <ad adTheme="white" adType="video" unitId="adunit-e3dd54dd8a49659b"></ad>
+</view>

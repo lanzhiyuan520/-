@@ -1,0 +1,162 @@
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.backimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.backbutton {
+    left: 6%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.backbutton,.helpbutton {
+    position: fixed;
+    top: 3%;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+}
+
+.helpbutton {
+    left: 85.3%;
+}
+
+.tips {
+    position: fixed;
+    top: 17.4%;
+    left: 14.7%;
+    z-index: 10;
+    width: 70.6%;
+    height: 65%;
+}
+
+.tips image {
+    width: 100%;
+    height: 100%;
+}
+
+.gbhelp {
+    width: 35rpx;
+    height: 35rpx;
+    top: 21%;
+    left: 72%;
+    position: fixed;
+    z-index: 10;
+}
+
+.gbhelp image {
+    width: 100%;
+    height: 100%;
+}
+
+.wuchi {
+    width: 95%;
+    top: 110rpx;
+    position: fixed;
+    z-index: 2;
+}
+
+.wuchi image {
+    width: 100%;
+    height: 100%;
+}
+
+.ya {
+    position: fixed;
+    z-index: 3;
+    width: 12%;
+}
+
+.ya image {
+    width: 100%;
+}
+
+.yi {
+    left: 200rpx;
+    top: 580rpx;
+}
+
+.er {
+    left: 225rpx;
+    top: 670rpx;
+}
+
+.san {
+    left: 220rpx;
+    top: 760rpx;
+}
+
+.si {
+    left: 215rpx;
+    top: 850rpx;
+}
+
+.wu {
+    left: 460rpx;
+    top: 580rpx;
+}
+
+.liu {
+    left: 435rpx;
+    top: 670rpx;
+}
+
+.qi {
+    left: 440rpx;
+    top: 760rpx;
+}
+
+.ba {
+    left: 445rpx;
+    top: 850rpx;
+}
+
+.hejiu {
+    width: 95%;
+    z-index: 3;
+    top: 110rpx;
+    position: fixed;
+}
+
+.yao {
+    top: 110rpx;
+    float: left;
+}
+
+.yao,.yao image {
+    width: 100%;
+}
+
+.chonglai {
+    width: 50%;
+    margin-left: 25%;
+    float: left;
+}
+
+.chonglai image {
+    width: 100%;
+}
+
+.usermotto {
+    z-index: 99;
+    margin-top: 100px;
+    border: solid;
+}
+
+.ggad {
+    width: 80%;
+    margin-left: 10%;
+}

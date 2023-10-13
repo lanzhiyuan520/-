@@ -1,0 +1,22 @@
+<view class="container">
+    <ad-screen></ad-screen>
+    <image class="backimage" src="../../images/chaidan/background.png"></image>
+    <button hoverClass="none" openType="share">
+        <image bindtap="back_click" class="backbutton" src="../../images/index.png"></image>
+    </button>
+    <image bindtap="help_click" class="helpbutton" src="../../images/help.png"></image>
+    <image class="boom" src="../../images/chaidan/boom.png"></image>
+    <image bindtap="cut" class="c c1" data-cid="1" src="{{cut[1]}}"></image>
+    <image bindtap="cut" class="c c2" data-cid="2" src="{{cut[2]}}"></image>
+    <image bindtap="cut" class="c c3" data-cid="3" src="{{cut[3]}}"></image>
+    <image bindtap="cut" class="c c4" data-cid="4" src="{{cut[4]}}"></image>
+    <image bindtap="cut" class="c c5" data-cid="5" src="{{cut[5]}}"></image>
+    <image bindtap="cut" class="c c6" data-cid="6" src="{{cut[6]}}"></image>
+    <image bindtap="cut" class="c c7" data-cid="7" src="{{cut[7]}}"></image>
+    <image bindtap="cut" class="c c8" data-cid="8" src="{{cut[8]}}"></image>
+    <image class="time" src="../../images/chaidan/time.gif"></image>
+    <image class="tips" src="../../images/chaidan/tips.png" style="display:{{tips_show}}"></image>
+    <image bindtap="tips_close_click" class="close" src="../../images/chaidan/close.png" style="display:{{tips_show}}"></image>
+    <image class="again_back" src="../../images/chaidan/again_back.png" style="display:{{again_show}}"></image>
+    <image bindtap="again" class="again" src="../../images/chaidan/again.png" style="display:{{again_show}}"></image>
+</view>

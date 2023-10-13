@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "nav": "/pages/comps/nav/nav",
+        "ad-screen": "../comps/adScreen/adScreen"
+    },
+    "navigationBarTitleText": "酒桌玩筛子 七八九",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#ffe9c2",
+    "navigationStyle": "default"
+}

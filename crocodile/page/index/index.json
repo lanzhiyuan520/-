@@ -1,0 +1,11 @@
+{
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "鳄鱼拔牙",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

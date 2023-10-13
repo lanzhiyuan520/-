@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "ad-screen": "../comps/adScreen/adScreen"
+    },
+    "component": true
+}

@@ -1,0 +1,58 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent" title=""></nav>
+<view class="time-wrap page {{isIpx?'ipx':''}} bg-black white">
+    <view class="start-wrap flex column" hidden="{{hasEnter}}" style="height: {{adBtnNo!==-1?'80%':'90%'}};">
+        <image class="select-bg" src="/time/assets/select_bg.png">
+            <view bindtap="onChangeCount" class="person-count bold center" style="top: {{isIOS?238:238}}rpx">{{count}}</view>
+        </image>
+        <view class="rule">{{count>1?'误差最大的人将接受惩罚':'误差超过0.1秒将接受惩罚'}}</view>
+        <image bindtap="onEnterGame" class="enter-game" src="/time/assets/enter_game.png" style="margin-top: {{adBtnNo!==-1?18:98}}rpx;"></image>
+        <view class="ad-wrap {{isIpx?'ipx':''}} ad-btn-{{clickNo}}" wx:if="{{!hasEnter&&!noAd}}">
+            <image class="btn-click-bg ad-btn-bg-{{adBtnNo}}" src="/assets/click_me_bg_{{adBtnNo}}.png" wx:if="{{adBtnNo!==-1}}"></image>
+            <image class="btn-click-text ad-btn-text-{{adBtnNo}}" src="/assets/click_me_text_{{adBtnNo}}.png" wx:if="{{adBtnNo!==-1}}"></image>
+        </view>
+    </view>
+    <view class="main-wrap {{count<=3?'count-'+count:'flex absolute-c'}}" hidden="{{!hasEnter}}">
+        <image class="player-{{index+1}} {{gridType}}" src="/time/assets/{{gridType}}_player_{{index+1}}{{item.stopped?'_selected':''}}.png" wx:if="{{index+1<=count}}" wx:for="{{players}}" wx:key="index">
+            <view bindtouchstart="onStopCountdown" class="number-wrap bold absolute-c center" data-idx="{{index}}">
+                <view class="number">
+                    <text class="number-word" wx:for="{{item.sec}}" wx:for-index="k" wx:for-item="v" wx:key="{{key}}">{{v}}</text>
+                </view>
+                <view class="stop">{{item.stopped?'已定格':'点击定格'}}</view>
+            </view>
+        </image>
+        <image wx:if="{{count===5}}"></image>
+    </view>
+    <view class="overlay-wrap" hidden="{{!( hasEnter&&(!isStart||isEnd) )}}">
+        <image bindtap="onStartGame" class="start-game absolute-c" src="/time/assets/start_game.png" wx:if="{{!isStart}}"></image>
+        <view class="result-wrap absolute-c center" wx:if="{{isEnd}}">
+            <image class="one-result-bg" src="/time/assets/one_result_bg.png" wx:if="{{count===1}}">
+                <view class="one-success-info absolute-c {{players[0].isSuccess?'':'fail'}}">
+                    <image class="one-success-img" src="/time/assets/success.png" wx:if="{{players[0].isSuccess}}"></image>
+                    <view class="number bold one-success-number">
+                        <text class="number-word" wx:for="{{players[0].sec}}" wx:for-index="k" wx:for-item="v" wx:key="{{key}}">{{v}}</text>
+                    </view>
+                    <view class="one-success-hint {{players[0].isSuccess?'':'fail'}}">
+                        <block wx:if="{{players[0].isSuccess}}">真是神手速</block>
+                        <block wx:else>
+                            <view>还是{{players[0].diff>0?'慢':'快'}}了一点</view>
+                            <view>乖乖接受惩罚吧！</view>
+                        </block>
+                    </view>
+                </view>
+            </image>
+            <view class="multi-result-list" wx:else>
+                <view class="result-item" wx:for="{{players}}" wx:key="index">
+                    <image class="multi-result-img" src="/time/assets/multi_result_bg.png" wx:if="{{item.isSuccess}}"></image>
+                    <view>玩家{{NOS[index]}} <text wx:for="{{item.sec}}" wx:for-index="k" wx:for-item="v" wx:key="{{key}}">{{v}}</text>
+                    </view>
+                </view>
+            </view>
+            <image bindtap="onAgain" class="again" src="/time/assets/again.png" wx:if="{{count===1&&players[0].isSuccess}}"></image>
+            <block wx:else>
+                <image bindtap="onPunishment" class="punishment" src="/time/assets/select_punishment.png"></image>
+                <image bindtap="onAgain" class="again-1" src="/time/assets/again_1.png"></image>
+            </block>
+        </view>
+    </view>
+</view>

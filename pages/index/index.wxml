@@ -1,0 +1,77 @@
+<add-tips></add-tips>
+<view class="container">
+    <image class="back" src="/assets/bg.jpg"></image>
+    <view class="head">
+        <view class="user-info">
+            <image class="avatar-bg" src="/assets/avatar_bg.png">
+                <open-data class="user-avatar" type="userAvatarUrl"></open-data>
+            </image>
+            <open-data class="user-name" type="userNickName"></open-data>
+        </view>
+        <view class="small">
+            <navigator bindtap="onButton" hoverClass="buttonHover" url="/secondary/page/punishment/punishment">
+                <image src="/assets/trueWords.png"></image>
+            </navigator>
+            <button bindtap="onButton" hoverClass="buttonHover" openType="share">
+                <image src="/assets/recognize1.png"></image>
+            </button>
+        </view>
+    </view>
+    <view class="appList">
+        <navigator bindtap="onButton" hoverClass="buttonHover" openType="switchTab" url="/pages/dice/index/index">
+            <image src="/assets/dice.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/confrontation/page/index/index">
+            <image src="/assets/confrontation.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/square/page/index/index">
+            <image src="/assets/square.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/time/page/index/index">
+            <image src="/assets/time.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/pages/roulette/roulette">
+            <image src="/assets/roulette.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/finger/page/index/index">
+            <image src="/assets/finger.png"></image>
+        </navigator>
+        <button bindtap="toCrocodile" hoverClass="buttonHover">
+            <image src="/assets/crocodile.png"></image>
+        </button>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/throwDice/page/index/index">
+            <image src="/assets/throwDice.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/pages/handBarrage/handBarrage">
+            <image src="/assets/Barrage.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/pages/light/light">
+            <image src="/assets/lamp.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/mineClear/page/index/index">
+            <image src="/assets/mineClear.png"></image>
+        </navigator>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/pages/gf/gf">
+            <image src="/assets/drinkingOrder.png"></image>
+        </navigator>
+        <button bindtap="toDigitalBomb" hoverClass="buttonHover">
+            <image src="/assets/digitalBomb.png"></image>
+        </button>
+        <button bindtap="toBombDismant" hoverClass="buttonHover">
+            <image src="/assets/bombDismant.png"></image>
+        </button>
+        <button bindtap="toDiffer" hoverClass="buttonHover">
+            <image src="/assets/differ.png"></image>
+        </button>
+        <navigator bindtap="onButton" hoverClass="buttonHover" url="/pages/luckyJump/index">
+            <image src="/assets/luckyJump.png"></image>
+        </navigator>
+        <button bindtap="onButton" hoverClass="buttonHover" openType="contact" url="/uncle/page/index/index">
+            <image src="/assets/customerSer.png"></image>
+        </button>
+        <button bindtap="onButton" hoverClass="buttonHover" openType="share" url="/uncle/page/index/index">
+            <image src="/assets/invitation.png"></image>
+        </button>
+    </view>
+</view>
+<ad-custom unit-id="adunit-3041a67d9793b3ec"></ad-custom>

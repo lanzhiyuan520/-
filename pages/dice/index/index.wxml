@@ -1,0 +1,61 @@
+<view class="wrap">
+    <ad-screen></ad-screen>
+    <ad-custom style="z-index: 1000; position: fixed; top: 200rpx; right: 18rpx;" unitId="adunit-cef3b88bb296cc7d"></ad-custom>
+    <image catchtouchmove="stopPull" class="back" src="/assets/bg.jpg"></image>
+    <view animation="{{animationData}}" catchtouchmove="stopPull" id="dicecup">
+        <image id="dicecup-bottom" src="{{diceBottomUrl}}" style="filter:hue-rotate({{diceCupColor}}deg);"></image>
+        <view id="dice-container">
+            <image class="dice" id="dice1" src="{{diceSrcs[0]}}" style="{{diceStyles[0]}}"></image>
+            <image class="dice" id="dice2" src="{{diceSrcs[1]}}" style="{{diceStyles[1]}}"></image>
+            <image class="dice" id="dice3" src="{{diceSrcs[2]}}" style="{{diceStyles[2]}}"></image>
+            <image class="dice" id="dice4" src="{{diceSrcs[3]}}" style="{{diceStyles[3]}}"></image>
+            <image class="dice" id="dice5" src="{{diceSrcs[4]}}" style="{{diceStyles[4]}}"></image>
+            <image class="dice" id="dice6" src="{{diceSrcs[5]}}" style="{{diceStyles[5]}}"></image>
+        </view>
+        <!-- <image catchtouchmove="moveDiceCup" catchtouchstart="touchDiceCup" class="dicecup-top" src="https://xiaogao-1313575062.cos.ap-nanjing.myqcloud.com/29803200/diceSkin/dicecup{{diceCupStyleIdx}}/dicecup_{{item.idx}}.png" style="display:{{item.display}};filter:hue-rotate({{diceCupColor}}deg);" wx:for="{{diceCupDisplay}}" wx:key="index"></image> -->
+        <image catchtouchmove="moveDiceCup" catchtouchstart="touchDiceCup" class="dicecup-top" src="http://pic.lanzhiyuan99.cn/wx/dicecup{{diceCupStyleIdx}}/dicecup_{{item.idx}}.png" style="display:{{item.display}};filter:hue-rotate({{diceCupColor}}deg);" wx:for="{{diceCupDisplay}}" wx:key="index"></image>
+    </view>
+    <image catchtap="onMenuTap" id="btn-menu" src="/assets/dice/set@2x.png"></image>
+    <image catchtap="onBtnDiceTap" id="btn-dice" src="{{btnDiceURL}}"></image>
+    <form id="btn-roll" reportSubmit="true">
+        <button catchtap="shakeDice" formType="submit">
+            <image src="/assets/dice/ui/btn_roll_disabled.png" style="{{isLocked?'display:none':'display:block'}}"></image>
+        </button>
+    </form>
+    <view catchtap="onGuideTap" id="guide-view" wx:if="{{guideNum!=0}}">
+        <image src="/assets/dice/ui/guide01.png" style="bottom:18%;" wx:if="{{guideNum==1}}"></image>
+        <image src="/assets/dice/ui/guide02.png" style="bottom:60%; left:-15%;" wx:if="{{guideNum==2}}"></image>
+        <image src="/assets/dice/ui/guide03.png" style="bottom:16%;" wx:if="{{guideNum==3}}"></image>
+        <image src="/assets/dice/ui/guide04.png" style="bottom:16%;" wx:if="{{guideNum==4}}"></image>
+    </view>
+    <view class="moreBtn" style="left: 46rpx; width: 120rpx; height: 120rpx;">
+        <image src="/assets/dice/skin.png"></image>
+    </view>
+    <view catchtap="privilegeBtn" class="privilege">
+        <image class="privilege-img" src="/assets/dice/videoBtn.png"></image>
+    </view>
+    <view class="cashTaskWrap" wx:if="{{isCashTask}}">
+        <view catchtap="cashTaskShow" class="cashTaskBack"></view>
+        <view class="cashTaskCon">
+            <image class="cashTaskConBack" src="/assets/dice/cashTaskBack.png"></image>
+            <image catchtap="cashTaskCash" class="cashTaskConBtn" src="/assets/dice/cashTaskBtn.png"></image>
+        </view>
+    </view>
+    <view class="skin" wx:if="{{privilegePop}}">
+        <view bindtap="privilegeBtnClo" class="skin-mask"></view>
+        <view class="privilegePop">
+            <image class="priviBack" src="/assets/dice/prop.png"></image>
+            <view bindtap="privilege" class="privilegeBtn" data-id="0">看视频领取特权</view>
+            <view bindtap="privilege" class="useBtn" data-id="1">使用特权({{privilegeNum}})</view>
+            <view bindtap="privilegeBtnClo" class="gotIt">知道了</view>
+        </view>
+    </view>
+    <view class="lighting" wx:if="{{isLighting}}">
+        <image class="lighting1" src="/assets/dice/ui/guang.png"></image>
+        <image src="/assets/dice/ui/guang.png"></image>
+    </view>
+    <view class="pk">
+        <image class="pkImg" src="/assets/dice/pk.png"></image>
+        <button class="pkBtn" openType="share"></button>
+    </view>
+</view>

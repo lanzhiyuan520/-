@@ -1,0 +1,12 @@
+<view class="data-v-486569c2">
+    <view class="G-windowBg data-v-486569c2"></view>
+    <view class="hongbaoPop hbShow data-v-486569c2">
+        <image class="hb_bg data-v-486569c2" lazyLoad="true" src="/assets/components/i_red_bg3.png"></image>
+        <image bindtap="__e" class="hb_close1 hb_close ld_redhb_close data-v-486569c2" src="/assets/components/close.png"></image>
+        <view class="hb_title2 data-v-486569c2">恭喜你获得现金红包</view>
+        <view class="hb_title2 hb_title3 data-v-486569c2">0.21<text class="font-size-32 data-v-486569c2">元</text>
+        </view>
+        <view class="hb_title4 data-v-486569c2">每天参与抽奖可获得更多红包</view>
+        <button class="hb_btn ld_redhb_close data-v-486569c2" hoverClass="hb_btn_hover">好的</button>
+    </view>
+</view>

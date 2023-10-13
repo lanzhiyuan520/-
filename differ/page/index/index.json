@@ -1,0 +1,10 @@
+{
+    "disableScroll": true,
+    "usingComponents": {
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    },
+    "navigationBarTitleText": "眼疾手快",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000",
+    "navigationStyle": "default"
+}

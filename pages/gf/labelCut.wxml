@@ -1,0 +1,38 @@
+<view class="back"></view>
+<view class="box data-v-9318f7e4">
+    <view class="label data-v-9318f7e4 {{isFlop?'see':''}}" style="font-family:cursive;">
+        <view class="cut q data-v-9318f7e4">
+            <image class="bg data-v-9318f7e4" src="/static/main/sign_bg_q_gf.png"></image>
+            <view class="text data-v-9318f7e4">{{arr.signText}}</view>
+        </view>
+        <view class="cut j data-v-9318f7e4">
+            <image class="bg data-v-9318f7e4" src="/static/main/sign_bg_j_gf.png"></image>
+            <view class="text data-v-9318f7e4">{{arr.signTextSee}}</view>
+        </view>
+    </view>
+    <view class="btn-wrap data-v-9318f7e4">
+        <view class="wrap data-v-9318f7e4 {{isFlop?'out':'in'}}">
+            <button bindtap="turnOver" class="btn red big hover data-v-9318f7e4" hoverClass="none">
+                <image class="bg _img data-v-9318f7e4" src="/static/main/sign_btn_z_gf.png"></image>
+                <view class="text data-v-9318f7e4">翻</view>
+            </button>
+            <button class="btn yellow hover data-v-9318f7e4" hoverClass="none" openType="share">
+                <image class="bg _img data-v-9318f7e4" src="/static/main/sign_btn_s_gf.png"></image>
+                <view class="text data-v-9318f7e4">分享</view>
+            </button>
+        </view>
+        <view class="wrap data-v-9318f7e4 {{isFlop?'in':'out'}}">
+            <button bindtap="onceMore" class="btn red hover data-v-9318f7e4" hoverClass="none">
+                <image class="bg _img data-v-9318f7e4" src="/static/main/sign_btn_z_gf.png"></image>
+                <view class="text data-v-9318f7e4">
+                    <view class="data-v-9318f7e4">再来</view>
+                    <view class="data-v-9318f7e4">一次</view>
+                </view>
+            </button>
+            <button class="btn yellow hover data-v-9318f7e4" hoverClass="none" openType="share">
+                <image class="bg _img data-v-9318f7e4" src="/static/main/sign_btn_s_gf.png"></image>
+                <view class="text data-v-9318f7e4">分享</view>
+            </button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,59 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.home-wrap {
+    justify-content: center;
+}
+
+.home-title {
+    width: 496rpx;
+    height: 128rpx;
+    margin-top: 85rpx;
+}
+
+.guide-swipe {
+    width: 596rpx;
+    height: 596rpx;
+    margin-top: 100rpx;
+    text-align: center;
+}
+
+.slide-image {
+    width: 510rpx;
+    height: 510rpx;
+    background-color: #fff;
+    box-shadow: 0 0 6rpx 0 rgba(0,0,0,.24);
+    border-radius: 26rpx;
+    padding: 42rpx;
+    box-sizing: border-box;
+}
+
+.size {
+    font-size: 32rpx;
+    font-weight: 600;
+    margin-top: 30rpx;
+    color: #fff;
+}
+
+.arrow-down {
+    width: 26rpx;
+    height: 14rpx;
+    margin-left: 8rpx;
+}
+
+.btn-primary {
+    margin-top: 70rpx;
+    width: 360rpx;
+    line-height: 100rpx;
+    border-radius: 54rpx;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,0,0,.19);
+    color: #000;
+    font-size: 36rpx;
+    font-weight: 600;
+}

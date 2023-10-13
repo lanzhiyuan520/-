@@ -1,0 +1,46 @@
+<ad-screen></ad-screen>
+<view class="container">
+    <nav bgColor="transparent"></nav>
+    <image class="back" src="/assets/bg.jpg"></image>
+    <view class="content">
+        <view class="row share-box">
+            <image class="row-icon" src="../../assets/image/more/share.png"></image>
+            <text class="row-title">分享到</text>
+            <image class="icon-wechat" src="../../assets/image/more/wechat.png"></image>
+            <text class="text-right">微信好友</text>
+            <image class="icon-right" src="../../assets/image/more/arrow-right.png"></image>
+            <button class="btn-row" openType="share"></button>
+        </view>
+        <view class="row contact-box">
+            <image class="row-icon" src="../../assets/image/more/contact.png"></image>
+            <text class="row-title">专属客服</text>
+            <image class="icon-right" src="../../assets/image/more/arrow-right.png"></image>
+            <button bindtap="onContactService" class="btn-row" openType="contact"></button>
+        </view>
+        <view class="row sound-box">
+            <image class="row-icon" src="../../assets/image/setup/sound.png"></image>
+            <text class="row-title">音效</text>
+            <image bindtap="toggleSoundStatus" class="icon-status" src="{{soundImgStatus}}"></image>
+        </view>
+        <view class="row visible-box">
+            <image class="row-icon" src="../../assets/image/setup/visible@2x.png"></image>
+            <text class="row-title">显示骰子总数</text>
+            <image bindtap="toggleVisibleStatus" class="icon-status" src="{{visibleImgStatus}}"></image>
+        </view>
+        <view class="row color-box big-row">
+            <image class="row-icon" src="../../assets/image/setup/color.png"></image>
+            <text class="row-title">颜色设置</text>
+            <view class="btn-container">
+                <view class="ctl-box">
+                    <image bindtap="handlerPre" class="btn-left" src="../../assets/image/setup/left.png"></image>
+                    <swiper circular="{{true}}" class="img-box" current="{{currentImgIndex}}" duration="{{duration}}">
+                        <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+                            <image class="color-img" src="{{item}}"></image>
+                        </swiper-item>
+                    </swiper>
+                    <image bindtap="handlerNext" class="btn-right" src="../../assets/image/setup/right.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

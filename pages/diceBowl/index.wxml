@@ -1,0 +1,33 @@
+<ad-screen></ad-screen>
+<view class="wview">
+    <image class="wimg" src="/assets/diceBowl/w.png"></image>
+    <image animation="{{animation1}}" class="img1 {{diceDiap[0]==1?'diceDisplay':'diceHide'}}" src="{{img1}}"></image>
+    <image animation="{{animation2}}" class="img2 {{diceDiap[1]==2?'diceDisplay':'diceHide'}}" src="{{img2}}"></image>
+    <image animation="{{animation3}}" class="img3 {{diceDiap[2]==3?'diceDisplay':'diceHide'}}" src="{{img3}}"></image>
+    <image animation="{{animation4}}" class="img4 {{diceDiap[3]==4?'diceDisplay':'diceHide'}}" src="{{img4}}"></image>
+    <image animation="{{animation5}}" class="img5 {{diceDiap[4]==5?'diceDisplay':'diceHide'}}" src="{{img5}}"></image>
+    <view class="diceNum">
+        <text bindtap="reduce" style="font-weight: bold;">-</text>
+        <text>{{diceNum}}</text>
+        <text bindtap="increase" style="font-weight: bold;">+</text>
+    </view>
+    <view bindtap="next" class="nextview">
+        <text class="next">摇一摇</text>
+    </view>
+    <view style="color: #999; line-height: 90rpx;" wx:if="{{isTips}}">看完整版视频,即可畅玩该玩法～～</view>
+    <ul class="rule">
+        <li>
+            <text>游戏规则</text>
+        </li>
+        <li>人数: 2人以上。</li>
+        <li>需求: 一个公共的大杯子/碗。</li>
+        <li>规则: 两颗骰子/两人以上轮流摇,摇到 1、3、4、5、6 都不用喝,摇到 7 不用喝,但要往公共杯里加酒，随意加，然后换下一个摇，摇到 8 就要把公共杯里的酒喝一半，然后继续摇，摇到 9 的人就要喝完，然后随意倒酒再继续摇，摇到两个 1 可以指定在坐的任何一个人喝完这杯酒，如果摇到两个相同的点数，摇骰子的顺序就倒转一下。</li>
+    </ul>
+    <button class="share-friend" openType="share" plain="true" style="padding:0;border:0;top:710rpx;right: 75rpx;">
+        <image src="/assets/diceBowl/shareImg.png"></image>
+    </button>
+    <button class="share-friend" openType="contact" plain="true" style="padding:0;border:0;top: 700rpx;left: 75rpx;width: 120rpx;height: 120rpx;">
+        <image src="/assets/diceBowl/kf.png"></image>
+    </button>
+    <ad-custom unit-id="adunit-57b1ec986985dfc7"></ad-custom>
+</view>

@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "ad-screen": "../comps/adScreen/adScreen"
+    },
+    "navigationBarTitleText": "数字炸弹",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000",
+    "navigationStyle": "default"
+}

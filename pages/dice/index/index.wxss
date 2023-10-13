@@ -1,0 +1,423 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#dicecup {
+    position: absolute;
+    width: 600rpx;
+    height: 700rpx;
+    top: 51%;
+    left: 50%;
+    margin-left: -300rpx;
+    margin-top: -160rpx;
+}
+
+#dicecup-bottom,.dicecup-top {
+    width: 660rpx;
+    height: 990rpx;
+    position: absolute;
+    bottom: 100rpx;
+    left: 50%;
+    filter: hue-rotate(130deg);
+    margin-left: -330rpx;
+}
+
+#dice-container {
+    width: 600rpx;
+    height: 300rpx;
+    position: absolute;
+    bottom: 170rpx;
+    left: 50%;
+    margin-left: -300rpx;
+    transform: scale(.95);
+}
+
+.dice {
+    position: absolute;
+    width: 110rpx;
+    height: 110rpx;
+}
+
+#dice1 {
+    top: 30rpx;
+    left: 200rpx;
+}
+
+#dice2 {
+    top: 35rpx;
+    left: 300rpx;
+}
+
+#dice3 {
+    top: 60rpx;
+    left: 100rpx;
+}
+
+#dice4 {
+    top: 100rpx;
+    left: 210rpx;
+}
+
+#dice5 {
+    top: 70rpx;
+    left: 380rpx;
+}
+
+#dice6 {
+    top: 103rpx;
+    left: 320rpx;
+}
+
+.setting-item {
+    width: 500rpx;
+    height: 100rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30rpx;
+    z-index: 1;
+}
+
+.setting-item text {
+    line-height: 100rpx;
+}
+
+.btn-triangle {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+#panel-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#panel-setting,#setting-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#setting-mask {
+    background-color: #000;
+    opacity: .4;
+}
+
+.btn-left {
+    position: absolute;
+    top: 40%;
+    left: 10rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-left text {
+    width: 30rpx;
+}
+
+.btn-right {
+    position: absolute;
+    top: 40%;
+    right: 10rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-right text {
+    width: 30rpx;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+.btn-zuma {
+    width: 120rpx;
+    height: 120rpx;
+    right: 48rpx;
+    border-radius: 50%;
+}
+
+.btn-zuma,.moreBtn {
+    position: fixed;
+    top: 2%;
+}
+
+.moreBtn {
+    display: flex;
+    align-items: center;
+    right: 45rpx;
+    font-size: 41rpx;
+}
+
+#btn-roll button,.moreBtn image {
+    width: 100%;
+    height: 100%;
+}
+
+#btn-roll button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+#btn-roll button image {
+    width: 100%;
+    height: 100%;
+}
+
+.page .pk {
+    border: none;
+    border-radius: 0;
+}
+
+.pk {
+    position: fixed;
+    top: 2%;
+    right: 43.5rpx;
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.pk .pkImg,.pkBtn {
+    width: 100%;
+    height: 100%;
+}
+
+.pkBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.pkBtn:after {
+    border: none;
+}
+
+.skinBtn {
+    position: fixed;
+    top: 21%;
+    right: 50rpx;
+    width: 123rpx;
+    height: 123rpx;
+}
+
+.skinBtnImg {
+    width: 100%;
+    height: 100%;
+}
+
+.privilege {
+    position: fixed;
+    top: 3.5%;
+    left: 50%;
+    width: 372rpx;
+    height: 114rpx;
+    margin-left: -186rpx;
+}
+
+.privilege-img,.skin-mask {
+    width: 100%;
+    height: 100%;
+}
+
+.skin-mask {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    opacity: .6;
+    top: 0;
+}
+
+.privilegePop {
+    z-index: 11;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 620rpx;
+    margin-left: -310rpx;
+}
+
+.priviBack {
+    width: 620rpx;
+    height: 720rpx;
+}
+
+.privilegeBtn {
+    position: absolute;
+    top: 450rpx;
+    left: 50%;
+    width: 320rpx;
+    height: 80rpx;
+    margin-left: -160rpx;
+    color: #fff;
+    font-size: 36rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    line-height: 80rpx;
+    background-color: #ffb400;
+}
+
+.useBtn {
+    top: 560rpx;
+    color: #ffb400;
+    border: 5rpx solid #ffb400;
+    border-radius: 40rpx;
+}
+
+.gotIt,.useBtn {
+    position: absolute;
+    left: 50%;
+    width: 310rpx;
+    height: 70rpx;
+    margin-left: -160rpx;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 70rpx;
+}
+
+.gotIt {
+    top: 775rpx;
+    color: #fff;
+    border: 5rpx solid #fff;
+    border-radius: 40rpx;
+}
+
+.dewatering {
+    top: 2.9%;
+    width: 376rpx;
+    height: 99rpx;
+    margin-left: -188rpx;
+}
+
+.cashTask,.dewatering {
+    position: fixed;
+    left: 50%;
+}
+
+.cashTask {
+    top: 2.8%;
+    width: 371rpx;
+    height: 111rpx;
+    margin-left: -185rpx;
+}
+
+.cashTask image,.dewatering image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cashTaskBack {
+    z-index: 100;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.cashTaskCon {
+    z-index: 101;
+    top: 18%;
+    left: 50%;
+    margin-left: -340rpx;
+}
+
+.cashTaskCon,.cashTaskCon .cashTaskConBack {
+    position: absolute;
+    width: 680rpx;
+    height: 770rpx;
+}
+
+.cashTaskCon .cashTaskConBack {
+    top: 0;
+}
+
+.cashTaskCon .cashTaskConBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 75rpx;
+    width: 276rpx;
+    height: 70rpx;
+    margin-left: -138rpx;
+}
+
+.lighting {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 49%;
+    width: 100%;
+}
+
+.lighting image {
+    width: 281rpx;
+    height: 275rpx;
+}
+
+.lighting1 {
+    transform: rotateY(180deg);
+}
+
+#btn-menu {
+    width: 140rpx;
+    height: 140rpx;
+    position: absolute;
+    bottom: 30rpx;
+    left: 50rpx;
+    z-index: 1;
+}
+
+#btn-menu:active {
+    transform: scale(.9,.9);
+    opacity: .5;
+}
+
+#btn-dice {
+    width: 140rpx;
+    height: 140rpx;
+    position: absolute;
+    bottom: 30rpx;
+    right: 50rpx;
+}
+
+#btn-dice:active {
+    transform: scale(.9,.9);
+    opacity: .5;
+}
+
+#btn-roll {
+    width: 170rpx;
+    height: 170rpx;
+    position: absolute;
+    bottom: 30rpx;
+    left: 50%;
+    margin-left: -85rpx;
+}
+
+#btn-roll:active {
+    transform: scale(.9,.9);
+    opacity: .5;
+}
+
+#guide-view {
+    background-color: rgba(10,10,10,.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+#guide-view image {
+    position: absolute;
+    width: 750rpx;
+    height: 320rpx;
+}

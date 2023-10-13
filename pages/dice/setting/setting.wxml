@@ -1,0 +1,28 @@
+<ad-screen></ad-screen>
+<image class="back" src="/assets/bg.jpg"></image>
+<view class="container">
+    <view class="setting-item">
+        <text class="setting-title">骰子个数</text>
+        <image catchtap="reduceDice" class="btn-triangle" src="/assets/dice/ui/btn_minus.png"></image>
+        <text id="dice-num">{{diceNum}}</text>
+        <image catchtap="addDice" class="btn-triangle" src="/assets/dice/ui/btn_add.png"></image>
+    </view>
+    <view class="setting-item">
+        <text class="setting-title">骰盅样式</text>
+        <image catchtap="changeDiceCupStyle" class="btn-triangle" src="/assets/dice/ui/btn_left.png"></image>
+        <image class="icon-diceCup" src="{{diceCupUrl}}" style="filter:hue-rotate({{diceCupColor}}deg);"></image>
+        <image catchtap="changeDiceCupStyle" class="btn-triangle" src="/assets/dice/ui/btn_right.png"></image>
+    </view>
+    <view class="setting-item">
+        <text class="setting-title">骰盅颜色</text>
+        <image catchtap="reduceColor" class="btn-triangle" src="/assets/dice/ui/btn_left.png"></image>
+        <image class="icon-diceCup" src="{{diceCupUrl}}" style="filter:hue-rotate({{diceCupColor}}deg);"></image>
+        <image catchtap="addColor" class="btn-triangle" src="/assets/dice/ui/btn_right.png"></image>
+    </view>
+    <view class="setting-item">
+        <text class="shake-text">是否开启震动</text>
+        <switch bindchange="switchChange" checked="{{isShakeOpen}}" color="#65a7ed"></switch>
+    </view>
+    <button catchtap="onBtnBackTap" style="margin:0; width:95%;" type="primary">保 存</button>
+    <button openType="share" style="margin:0; width:95%;" type="primary">分享给好友</button>
+</view>

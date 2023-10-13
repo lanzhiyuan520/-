@@ -1,0 +1,29 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent"></nav>
+<image class="back" src="/assets/bg.jpg"></image>
+<view class="wrapper">
+    <view class="header">
+        <text class="label my-score">剩余地雷数: {{minesLeft}}</text>
+        <text class="label my-score">使用时间: {{timesGo}}</text>
+    </view>
+    <view class="flex-container" wx:for="{{mineMap}}" wx:for-index="i" wx:for-item="row">
+        <button bindtap="demining" class="flex-item {{col<9?col<0?'':'open':col>9?'flag':'mine'}}" data-value="{{col}}" data-x="{{i}}" data-y="{{j}}" wx:for="{{row}}" wx:for-index="j" wx:for-item="col">
+            {{col<9?col<0?'':col:col>9?'F':'M'}}
+        </button>
+    </view>
+    <view class="footer">
+        <view>
+            <button bindtap="setGame" class="start-button" hoverClass="button-hover" size="mini" type="primary">{{buttionText}}</button>
+        </view>
+        <view style="color: #fff;">
+            是否插旗 <switch bindchange="flagSwitch"></switch>
+        </view>
+    </view>
+</view>
+<view class="tips">
+    <text>- 随机点击一个方格，方格即被打开并显示出方格中的数字;
+- 方格中数字则表示其周围的8个方格隐藏了几颗雷;
+- 如果点开的格子为空白格，即其周围有0颗雷，则其周围格子自动打开;
+- 如果其周围还有空白格，则会引发连锁反应;
+- 在你认为有雷的格子上，点击右键即可标记雷;</text>
+</view>

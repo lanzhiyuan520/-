@@ -1,0 +1,102 @@
+<nav bgColor="transparent" bindOnBack="onExit" selfBack="{{true}}"></nav>
+<ad-screen></ad-screen>
+<image class="background" src="/assets/bg.jpg"></image>
+
+<view class="container">
+    <view class="share">
+        <button class="share-btn" openType="share">多人模式</button>
+    </view>
+    <view class="tips">两人依次或同时点骰子，即可决出骰子点数大小</view>
+
+    <view class="shaizi-box">
+        <view class="sz-box sz-top" style="background: blue;">
+            <view class="sz-resultImg" wx:if="{{overStatus}}">
+                <image src="https://img.cardcute.com/smd/{{playOneNum>playTwoNum?'da':'xiao'}}.png"></image>
+            </view>
+            <view class="outer sz-red">
+                <view bindanimationend="calcResult" bindtouchstart="startClick" class="group {{userOne.class}}" data-play="1">
+                    <view class="page page1">
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page2">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page3">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page4">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page5">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page6">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="sz-box sz-bot" style="background: #bc3132;">
+            <view class="sz-resultImg" wx:if="{{overStatus}}">
+                <image src="https://img.cardcute.com/smd/{{playTwoNum>playOneNum?'da':'xiao'}}.png"></image>
+            </view>
+            <view class="outer">
+                <view bindanimationend="calcResult" bindtouchstart="startClick" class="group {{userTwo.class}}" data-play="2">
+                    <view class="page page1">
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page2">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page3">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page4">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page5">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                    <view class="page page6">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="btns" wx:if="{{overStatus}}">
+        <view bindtap="restart" class="btn restart">再来一次</view>
+    </view>
+
+    <ad-custom unit-id="adunit-f234ab6cbec67a64"></ad-custom>
+</view>

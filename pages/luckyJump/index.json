@@ -1,0 +1,7 @@
+{
+    "disableScroll": true,
+    "usingComponents": {
+        "nav": "/pages/comps/nav/nav",
+        "ad-screen": "../comps/adScreen/adScreen"
+    }
+}

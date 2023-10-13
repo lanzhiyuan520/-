@@ -1,0 +1,232 @@
+.time-wrap {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-wrap,.start-wrap {
+    justify-content: center;
+}
+
+.main-wrap {
+    position: relative;
+    height: 90%;
+}
+
+.select-bg {
+    width: 540rpx;
+    height: 529rpx;
+    position: relative;
+}
+
+.rule {
+    margin-top: 20rpx;
+    font-size: 35rpx;
+    color: #8467d1;
+    font-weight: 500;
+}
+
+.enter-game {
+    width: 493rpx;
+    height: 264rpx;
+}
+
+.person-count {
+    position: absolute;
+    font-size: 70rpx;
+    color: #fff;
+    left: calc(50% + 41rpx);
+    transform: translateX(-50%);
+    width: 100rpx;
+}
+
+.a {
+    width: 640rpx;
+    height: 640rpx;
+}
+
+.count-1 .player-1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.count-2 .player-1 {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 204rpx);
+    transform: translate3d(-56rpx,-50%,0);
+}
+
+.count-2 .player-2 {
+    position: absolute;
+    right: 0;
+    top: calc(50% + 204rpx);
+    transform: translate3d(48rpx,-50%,0);
+}
+
+.count-3 .player-1 {
+    left: calc(50% - 100rpx);
+    top: calc(50% - 300rpx);
+}
+
+.count-3 .player-1,.count-3 .player-2 {
+    position: absolute;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.count-3 .player-2 {
+    left: calc(50% + 140rpx);
+    top: calc(50% + 80rpx);
+}
+
+.count-3 .player-3 {
+    position: absolute;
+    left: calc(50% - 160rpx);
+    top: calc(50% + 400rpx);
+    transform: translate3d(-50%,-50%,0);
+}
+
+.main-wrap.flex {
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+.absolute-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.main-wrap>image {
+    position: relative;
+}
+
+.main-wrap.flex>image {
+    width: 50%;
+    height: 400rpx;
+    display: block;
+}
+
+.count-1 .number-wrap,.count-2 .number-wrap,.count-3 .number-wrap {
+    left: calc(50% + 10rpx);
+    top: 50%;
+    padding-top: 80rpx;
+    padding-bottom: 20rpx;
+}
+
+.main-wrap.flex {
+    top: calc(50% + 50rpx);
+}
+
+.main-wrap.flex .number-wrap {
+    width: 100%;
+    height: 100%;
+    padding-right: 20rpx;
+}
+
+.number {
+    min-width: 400rpx;
+    font-size: 124rpx;
+    text-align: center;
+}
+
+.main-wrap.flex .number-wrap .number {
+    margin-top: 116rpx;
+}
+
+.number.one-success-number {
+    font-size: 74rpx;
+}
+
+.number-word {
+    width: 80rpx;
+    text-align: center;
+    display: inline-block;
+}
+
+.number-word:nth-child(2),.number.one-success-number .number-word {
+    width: 40rpx;
+}
+
+.number.one-success-number .number-word:nth-child(2) {
+    width: 20rpx;
+}
+
+.stop {
+    font-size: 38rpx;
+}
+
+.overlay-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,.8);
+}
+
+.start-game {
+    width: 426rpx;
+    height: 150rpx;
+}
+
+.one-success-info {
+    top: calc(50% + 45rpx);
+}
+
+.one-success-info.fail {
+    top: calc(50% + 30rpx);
+}
+
+.one-result-bg {
+    width: 570rpx;
+    height: 440rpx;
+    position: relative;
+}
+
+.one-success-img {
+    width: 270rpx;
+    height: 60rpx;
+}
+
+.one-success-hint {
+    color: #ffb3b4;
+    font-size: 26rpx;
+}
+
+.one-success-hint.fail {
+    margin-top: 20rpx;
+}
+
+.again,.punishment {
+    width: 426rpx;
+    height: 150rpx;
+    margin-top: 130rpx;
+}
+
+.again-1 {
+    width: 178rpx;
+    height: 39rpx;
+    margin-top: 42rpx;
+    transform: translateX(-8rpx);
+}
+
+.result-item {
+    font-size: 36rpx;
+    margin-top: 48rpx;
+    position: relative;
+}
+
+.multi-result-img {
+    z-index: -1;
+    width: 338rpx;
+    height: 106rpx;
+    position: absolute;
+    left: 50%;
+    top: -26rpx;
+    transform: translateX(-50%);
+}

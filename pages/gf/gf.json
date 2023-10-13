@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "label-cut": "/pages/gf/labelCut",
+        "nav": "/pages/comps/nav/nav",
+        "ad-screen": "../comps/adScreen/adScreen"
+    },
+    "disableScroll": true
+}

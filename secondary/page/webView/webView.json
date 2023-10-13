@@ -1,0 +1,9 @@
+{
+    "disableScroll": true,
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "外部链接",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

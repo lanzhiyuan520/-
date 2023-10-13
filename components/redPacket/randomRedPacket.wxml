@@ -1,0 +1,16 @@
+<view>
+    <view class="G-windowBg"></view>
+    <view class="{{['hongbaoPop hbShow',type]}}" style="left:15%;top:20%;">
+        <image class="hb_icon" src="/assets/components/random-left.png"></image>
+        <image class="hb_bg" src="/assets/components/i_red_bg2.png"></image>
+        <view bindtap="__e" class="icon-guanbi-xian-common hb_close"></view>
+        <view class="hb_title">消耗20积分</view>
+        <view class="hb_title1">兑换每日随机红包</view>
+        <view class="redPacketBtn">
+            <button bindtap="__e" class="hb_open1" data-event-opts="{{[ [ 'tap',[ [ 'openRedPacket',['$event'] ] ] ] ]}}">
+                <image class="hb_open ball_ac" lazyLoad="true" src="/assets/components/open-icon.png"></image>
+            </button>
+        </view>
+        <view class="hb_text">最高 1.88元</view>
+    </view>
+</view>

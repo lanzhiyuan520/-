@@ -1,0 +1,40 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent" title="行酒令"></nav>
+<view class="container">
+    <view class="me-body">
+        <view class="sky">
+            <image class="cloud-crack" src="/static/main/cloud_crack.png"></image>
+            <image class="cloud-big" src="/static/main/cloud_big_gf.png"></image>
+            <image class="trace" src="/static/main/trace_gf.png"></image>
+            <image class="hill" src="/static/main/hill_gf.png"></image>
+            <image class="spray" src="/static/main/spray_gf.png"></image>
+            <image class="ship" src="/static/main/ship_gf.png"></image>
+            <image class="cloud-small" src="/static/main/cloud_small_gf.png"></image>
+        </view>
+        <view class="look">
+            <image class="size-max" src="/static/main/desk_gf.png"></image>
+            <view bindtap="start" class="sign-box {{startAnim?'fast':''}}" data-event-opts="{{[ [ 'tap',[ [ 'start',['fast'] ] ] ] ]}}">
+                <image class="label" src="/static/main/label_gf_01.png"></image>
+                <image class="label" src="/static/main/label_gf_02.png"></image>
+                <image class="label" src="/static/main/label_gf_03.png"></image>
+                <image class="label" src="/static/main/label_gf_04.png"></image>
+                <image class="label" src="/static/main/label_gf_05.png"></image>
+                <image class="label" src="/static/main/label_gf_06.png"></image>
+                <image class="label" src="/static/main/label_gf_07.png"></image>
+                <image class="label" src="/static/main/label_gf_08.png"></image>
+                <image class="label" src="/static/main/label_gf_09.png"></image>
+                <image class="label" src="/static/main/label_gf_10.png"></image>
+                <image class="size-max box" src="/static/main/sign_box_gf.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="physical">
+        <image class="size-max" src="/static/main/physical_box_gf.png"></image>
+        <view class="text">{{frequency}}</view>
+        <view class="value {{isNumAdm?'out':''}}">
+            <image src="/static/main/physical_gf.png"></image>
+            <text>-1</text>
+        </view>
+    </view>
+    <label-cut bind:callSomeFun="callSomeFun" class="vue-ref" style="display: {{isModel?'block':'none'}};"></label-cut>
+</view>

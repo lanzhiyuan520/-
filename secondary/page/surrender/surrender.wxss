@@ -1,0 +1,72 @@
+.surrender-wrap {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.surrender-img {
+    width: 700rpx;
+    height: 1064rpx;
+    display: block;
+    margin: 24rpx auto 0;
+}
+
+.surrender-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    justify-content: center;
+}
+
+.surrender-info {
+    width: 520rpx;
+    background-color: #000;
+    border: 2rpx solid #fff;
+    border-radius: 20rpx;
+    padding: 30rpx 20rpx;
+    box-sizing: border-box;
+}
+
+label {
+    min-width: 120rpx;
+}
+
+.placeholder,input,label {
+    font-size: 28rpx;
+    color: #fff;
+}
+
+.surrender-title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.surrender-info>.flex {
+    height: 90rpx;
+    border-bottom: 2rpx solid #fff;
+}
+
+.generate {
+    width: 200rpx;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    text-align: center;
+    font-size: 30rpx;
+    font-weight: 600;
+    border: 2rpx solid #fff;
+    color: #fff;
+    margin: 30rpx auto 0;
+}
+
+.save-album {
+    width: 304rpx;
+    height: 142rpx;
+    position: relative;
+    left: 50%;
+    transform: translate3d(-50%,-86rpx,0);
+}

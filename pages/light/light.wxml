@@ -1,0 +1,6 @@
+<import src="./tpl.wxml"></import>
+<ad-screen></ad-screen>
+<template is="coverComp" data="{{ShowMenu:ShowMenu,StyleList:StyleList,StyleIdx:StyleIdx,SpeedList:SpeedList,SpeedIdx:SpeedIdx,isIpx:isIpx,ShowCamera:CameraList[CameraIdx],MusicIdx:MusicIdx}}"></template>
+<camera binderror="onError" devicePosition="{{CameraList[CameraIdx]}}" wx:if="{{CameraList[CameraIdx]}}">
+    <template is="coverComp" data="{{ShowMenu:ShowMenu,StyleList:StyleList,StyleIdx:StyleIdx,SpeedList:SpeedList,SpeedIdx:SpeedIdx,isIpx:isIpx,ShowCamera:CameraList[CameraIdx],MusicIdx:MusicIdx}}" wx:if="{{!isIphone}}"></template>
+</camera>

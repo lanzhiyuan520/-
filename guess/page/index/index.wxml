@@ -1,0 +1,28 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent" bindOnBack="onExit" selfBack="{{true}}"></nav>
+<image class="back" src="/assets/bg.jpg"></image>
+<view class="guess-wrap page flex column {{isIpx?'ipx':''}}">
+    <image class="title-img" hidden="{{showGuide}}" src="/guess/assets/title.png"></image>
+    <view class="words-list flex" hidden="{{showGuide}}">
+        <view bindtap="onSelectWords" class="words-item bold {{selectedIdx===index?'selected':''}}" data-idx="{{index}}" wx:for="{{wordsList}}" wx:key="index">{{item.name}}</view>
+        <view class="words-item placeholder"></view>
+        <view class="words-item placeholder"></view>
+    </view>
+    <view class="bottom-wrap white" hidden="{{showGuide}}">
+        <view bindtap="onChangeTime" class="flex j-c">时长：{{gameTime}}秒 <image class="edit-icon" src="/guess/assets/edit_icon.png"></image>
+        </view>
+        <image bindtap="onReadyStartGame" class="start-game" src="/guess/assets/start_game.png"></image>
+    </view>
+</view>
+<image class="guide-wrap" hidden="{{!showGuide}}" src="/guess/assets/guide_bg.png">
+    <view class="guide-main">
+        <image bindtap="onCloseGuide" class="close-img" src="/guess/assets/close_guide.png"></image>
+        <view class="guide-desc bold">1.回答者将手机横屏并正对朝向表演者。</view>
+        <image class="guide-1" src="/guess/assets/guide_1.png"></image>
+        <view class="guide-desc bold">2.表演者表演或描述看到的词语，不能说出题目中的字。回答者进行猜词。</view>
+        <image class="guide-2" src="/guess/assets/guide_2.png"></image>
+        <view class="guide-desc bold">3.表演者示意回答者结果，回答者操作手机换词。屏幕朝上跳过，屏幕朝下回答正确。</view>
+        <image class="guide-3" src="/guess/assets/guide_3.png"></image>
+        <view class="guide-hint bold">转动手机开始游戏</view>
+    </view>
+</image>

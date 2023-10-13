@@ -1,0 +1,134 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.game-wrap {
+    justify-content: center;
+}
+
+.player-1 {
+    background: linear-gradient(124deg,#13d6fc,#24a4ff);
+}
+
+.player-2 {
+    background: linear-gradient(124deg,#ff8178,#ff5553);
+}
+
+.title {
+    font-size: 64rpx;
+    letter-spacing: 1rpx;
+    font-weight: 700;
+    color: #fff;
+}
+
+.player-1 .title {
+    text-shadow: 0 4rpx 8rpx #12a9f7;
+}
+
+.player-2 .title {
+    text-shadow: 0 4rpx 8rpx #ff5553;
+}
+
+.result {
+    font-size: 48rpx;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 22rpx;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.dot-wrap {
+    width: 700rpx;
+    height: 700rpx;
+    border-radius: 30rpx;
+    background-color: #fff;
+    margin: 36rpx auto 0;
+    padding: 64rpx;
+    box-sizing: border-box;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.line-item {
+    position: absolute;
+    z-index: 1;
+}
+
+.dot-item {
+    background-color: #aeaeae;
+    width: 20px;
+    height: 20px;
+    border: 15px solid transparent;
+    background-clip: padding-box;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+
+.dot-item.dot-1 {
+    background-color: #12a9f7!important;
+}
+
+.dot-item.dot-2 {
+    background-color: #ff5553!important;
+}
+
+.dot-item.squared {
+    background-color: #605d5d;
+}
+
+.square-wrap {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.square-item {
+    position: relative;
+}
+
+.flag-img {
+    width: 55rpx;
+    height: 50rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.punishment {
+    margin-left: 40rpx;
+}
+
+.btn-primary {
+    margin-top: 70rpx;
+    width: 240rpx;
+    line-height: 100rpx;
+    border-radius: 54rpx;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4rpx 8rpx 0 rgba(0,0,0,.19);
+    color: #000;
+    font-size: 36rpx;
+    font-weight: 600;
+}
+
+.btn-again {
+    width: 218rpx;
+    height: 76rpx;
+    position: absolute;
+    right: 16rpx;
+}

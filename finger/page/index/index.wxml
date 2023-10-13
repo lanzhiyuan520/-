@@ -1,0 +1,21 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent" bindOnBack="onExit" selfBack="{{true}}"></nav>
+<view catchtouchend="touchend" catchtouchstart="bindViewTap" style="width:{{windowWidth}}px;height:{{windowHeight}}px; ">
+    <view data-index="{{index}}" style="position: fixed;left:{{item.x}}px;top:{{item.y}}px;;animation-name: {{item.animation_name}}" wx:for="{{xy}}" wx:key="{{ index }}">
+        <view class="dot" style="background: {{item.color}};border-color:{{item.color}} ; box-shadow:inset 1px 1px {{item.shadow}}px {{item.color}};animation-name: {{item.animation_name}} "></view>
+        <view class="pulse" style="border-color:{{item.color}}; box-shadow:inset 1px 1px {{item.shadow}}px {{item.color}};animation-name: {{item.animation_name}}"></view>
+        <view class="pulse1" style="border-color:{{item.color}}; box-shadow:inset 1px 1px {{item.shadow}}px {{item.color}};animation-name: {{item.animation_name}}"></view>
+    </view>
+</view>
+<view catchtouchstart="start_btu" class="start_btu" data-type="{{start_but.type}}" style="top:{{start_but.title=='重新开始'?33:46}}%;" wx:if="{{start_but.status}}">{{start_but.title}}</view>
+<navigator class="start_btu" hoverClass="buttonHover" style="top: 63%;" url="/secondary/page/punishment/punishment" wx:if="{{start_but.title=='重新开始'&&start_but.status}}">选择惩罚</navigator>
+<view class="b_page" style="width:{{windowWidth}}px;height:{{windowHeight}}px; " wx:if="{{!xy[0]}}">
+    <view>戳</view>
+    <view>屏</view>
+    <view>幕</view>
+    <view>开</view>
+    <view>始</view>
+</view>
+<view class="clearCountDownTime" style="width:{{windowWidth}}px;height:{{windowHeight}}px; ">
+{{CountDownNum}}
+</view>

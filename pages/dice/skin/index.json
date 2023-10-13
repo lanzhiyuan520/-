@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "免费领取皮肤",
+    "navigationBarBackgroundColor": "#1e1c34",
+    "backgroundColor": "#1e1c34",
+    "navigationStyle": "default",
+    "usingComponents": {
+        "ad-screen": "../../comps/adScreen/adScreen"
+    }
+}

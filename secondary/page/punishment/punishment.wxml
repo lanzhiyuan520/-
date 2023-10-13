@@ -1,0 +1,28 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent"></nav>
+<view class="punishment-wrap flex column {{noAd?'no-ad':''}}">
+    <view class="flex column">
+        <image class="title-img" src="/secondary/assets/punishment_title.png"></image>
+        <view class="types flex">
+            <image bindtap="onClickType" class="envelope-img" id="envelope" src="/secondary/assets/envelope.png"></image>
+            <image bindtap="onClickType" class="drink-img" id="drink" src="/secondary/assets/drink.png"></image>
+            <image bindtap="onClickType" class="truth-img" id="truth" src="/secondary/assets/truth.png"></image>
+            <image bindtap="onClickType" class="risk-img" id="risk" src="/secondary/assets/risk.png"></image>
+        </view>
+        <view class="measure-wrap flex column" wx:if="{{measure}}">
+            <image class="wrap-bg {{measure?'show':''}}" src="/secondary/assets/wrap.png">
+                <view class="measure-content">
+                    <view class="measure">{{measure}}</view>
+                    <view bindtap="onChange" class="change">换一个</view>
+                </view>
+            </image>
+            <image bindtap="onCloseSelect" class="close-select" src="/secondary/assets/close_select.png"></image>
+        </view>
+    </view>
+    <view class="bottom-wrap {{measure?'hide':''}}">
+        <image bindtap="onAgain" class="again" src="/secondary/assets/again.png"></image>
+        <view>如果有好的惩罚题目可以反馈给客服添加哦</view>
+    </view>
+    <ad-custom unit-id="adunit-f234ab6cbec67a64"></ad-custom>
+</view>
+<image class="page-bg" src="/assets/bg.jpg"></image>

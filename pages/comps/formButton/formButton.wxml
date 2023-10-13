@@ -1,0 +1,5 @@
+<form bindsubmit="formSubmit" class="form-wrap" reportSubmit="{{true}}">
+    <button class="form-button button-class" disabled="{{disabled}}" formType="submit" hoverClass="none" loading="{{loading}}" openType="{{openType}}">
+        <slot></slot>
+    </button>
+</form>

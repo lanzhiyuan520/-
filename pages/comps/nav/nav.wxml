@@ -1,0 +1,7 @@
+<view class="nav {{isIpx?'ipx':''}}" style="background-color: {{bgColor}}">
+    <view bindtap="back" class="back">
+        <image class="back-img" mode="aspectFit" src="/assets/back.png"></image>
+    </view>
+    <view class="title">{{title}}</view>
+    <view class="right"></view>
+</view>

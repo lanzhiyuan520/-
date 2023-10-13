@@ -1,0 +1,8 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "骰子比大小",
+    "usingComponents": {
+        "nav": "/pages/comps/nav/nav",
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

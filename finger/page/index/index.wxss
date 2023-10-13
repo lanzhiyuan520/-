@@ -1,0 +1,141 @@
+page {
+    background: #000;
+}
+
+.b_page {
+    z-index: -100;
+    top: 0rpx;
+    color: #fff;
+    opacity: .1;
+    font-size: 150rpx;
+    padding-top: 23%;
+}
+
+.b_page,.start_btu {
+    position: absolute;
+    font-family: Georgia;
+    text-align: center;
+}
+
+.start_btu {
+    z-index: 100;
+    top: 46%;
+    left: 30%;
+    opacity: .5;
+    color: #000;
+    font-size: 36rpx;
+    width: 300rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    background: #fff;
+    border-radius: 20rpx;
+    transform: rotate(90deg);
+    letter-spacing: 20rpx;
+    text-indent: 20rpx;
+    font-weight: 700;
+}
+
+.clearCountDownTime {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    color: #fff;
+    opacity: .1;
+    font-family: Georgia;
+    font-size: 900rpx;
+    text-align: center;
+}
+
+@-webkit-keyframes spin1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(1turn) scale(2);
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(1turn) scale(2);
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(1turn) scale(1.3);
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(1turn) scale(1.3);
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.dot {
+    width: 80px;
+    height: 80px;
+    left: 58px;
+    top: 58px;
+    border-radius: 50%;
+    opacity: .5;
+    z-index: 1;
+}
+
+.dot,.pulse {
+    position: absolute;
+    animation: spin 1.5s .2s infinite;
+}
+
+.pulse {
+    width: 110px;
+    height: 110px;
+    left: 40px;
+    top: 40px;
+    z-index: 2;
+}
+
+.pulse,.pulse1 {
+    border-radius: 50%;
+    border: 1px solid #189c90;
+}
+
+.pulse1 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 25px;
+    top: 25px;
+    z-index: 31;
+    animation: spin 1.5s .4s infinite;
+}

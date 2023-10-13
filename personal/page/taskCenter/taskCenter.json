@@ -1,0 +1,16 @@
+{
+    "navigationStyle": "default",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "积分中心",
+    "navigationBarBackgroundColor": "#e9564f",
+    "navigationBarTextStyle": "white",
+    "backgroundColorTop": "#e9564f",
+    "backgroundColorBottom": "#F0F0F0",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        
+        "random-red-packet": "/components/redPacket/randomRedPacket",
+        "red-packet-success": "/components/redPacket/redPacketSuccess",
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

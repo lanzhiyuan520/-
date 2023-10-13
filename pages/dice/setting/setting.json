@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "设置",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000",
+    "navigationStyle": "default",
+    "disableScroll": true,
+    "usingComponents": {
+        "ad-screen": "../../comps/adScreen/adScreen"
+    }
+}

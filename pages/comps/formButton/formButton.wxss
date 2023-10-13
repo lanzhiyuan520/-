@@ -1,0 +1,13 @@
+.form-wrap {
+    position: relative;
+    display: block;
+}
+
+.form-button:after {
+    display: none;
+}
+
+.form-button {
+    background: transparent;
+    padding: 0;
+}

@@ -1,0 +1,17 @@
+<view class="container">
+    <ad-screen></ad-screen>
+    <view class="index-wrap">
+        <image class="logo-bk" src="../../images/logo.png"></image>
+        <view class="logo-btn">
+            <button bindtap="onStart" class="btn-none comm-btn start-btn" hoverClass="navigator-hover">
+                <text class="start-btn-text">开始挑战</text>
+            </button>
+            <button class="btn-none comm-btn start-btn" hoverClass="navigator-hover" openType="share">
+                <text class="start-btn-text">邀请好友</text>
+            </button>
+        </view>
+        <view class="bar-img">
+            <image src="../../images/bar.png"></image>
+        </view>
+    </view>
+</view>

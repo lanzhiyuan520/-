@@ -1,0 +1,13 @@
+{
+    "navigationStyle": "default",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "个人中心",
+    "navigationBarBackgroundColor": "#e9564f",
+    "navigationBarTextStyle": "white",
+    "backgroundColorTop": "#e9564f",
+    "backgroundColorBottom": "#F0F0F0",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "ad-screen": "../../../pages/comps/adScreen/adScreen"
+    }
+}

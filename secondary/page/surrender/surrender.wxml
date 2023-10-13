@@ -1,0 +1,29 @@
+<ad-screen></ad-screen>
+<nav title="喝酒认怂书"></nav>
+<view class="surrender-wrap page {{isIpx?'ipx':''}}">
+    <block wx:if="{{!clickGenerate}}">
+        <image class="surrender-img" src="/secondary/assets/surrender.png"></image>
+        <view class="surrender-dialog flex column">
+            <view class="surrender-info">
+                <view class="surrender-title">喝酒认怂书</view>
+                <view class="flex">
+                    <label>对方姓名</label>
+                    <input bindblur="onTargetNameInput" maxlength="10" placeholder="必填" placeholderClass="placeholder" value="{{targetName}}"></input>
+                </view>
+                <view class="flex">
+                    <label>我的姓名</label>
+                    <input bindblur="onNameInput" maxlength="10" placeholder="必填" placeholderClass="placeholder" value="{{name}}"></input>
+                </view>
+                <view class="flex">
+                    <label>认怂杯数</label>
+                    <input bindblur="onCountInput" maxlength="4" placeholder="必填" placeholderClass="placeholder" type="digit" value="{{count}}"></input>
+                </view>
+                <view bindtap="onGenerate" class="generate">生成认怂书</view>
+            </view>
+        </view>
+    </block>
+    <block wx:else>
+        <canvas canvasId="canvas" disableScroll="{{true}}" style="margin: 10rpx auto 0; width: {{bgWidth}}px; height: {{bgHeight}}px;"></canvas>
+        <cover-image bindtap="onSaveAlbum" class="save-album" src="/secondary/assets/save_album.png" wx:if="{{showSave}}"></cover-image>
+    </block>
+</view>

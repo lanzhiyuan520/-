@@ -1,0 +1,14 @@
+<ad-screen></ad-screen>
+<nav bgColor="transparent" bindOnBack="onExit" selfBack="{{true}}"></nav>
+<image class="back" src="/assets/bg.jpg"></image>
+<view class="home-wrap page flex column" style="padding-top: {{statusBarHeight}}px;">
+    <image class="home-title" src="/square/assets/title.png"></image>
+    <swiper autoplay="{{true}}" class="guide-swipe" indicatorActiveColor="#fff" indicatorColor="rgba(255, 255, 255, .7)" indicatorDots="{{true}}" interval="{{3000}}">
+        <swiper-item class="swipe-item" wx:for="{{[1,2,3]}}" wx:key="index">
+            <image class="slide-image" src="/square/assets/guide_{{item}}.png"></image>
+        </swiper-item>
+    </swiper>
+    <navigator class="btn-primary" hoverClass="none" url="/square/page/game/game?size={{size}}">开始游戏</navigator>
+    <view bindtap="onChangeSize" class="size flex">{{size}}X{{size}}方格<image class="arrow-down" src="/square/assets/white_arrow_down.png"></image>
+    </view>
+</view>

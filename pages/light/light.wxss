@@ -1,0 +1,424 @@
+page {
+    background: #000;
+}
+
+.light {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 100vh;
+}
+
+.back-img,.menu {
+    position: fixed;
+    z-index: 999;
+}
+
+.menu {
+    margin: 60rpx 40rpx;
+    width: 670rpx;
+    bottom: 0;
+    left: 0;
+}
+
+.take-photo {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border: 8rpx solid #fff;
+    padding: 5rpx;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.inner-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.menu .item {
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu .value {
+    width: 24rpx;
+    height: 24rpx;
+    border-radius: 100%;
+    border: 2rpx solid #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu .title,.menu .value {
+    text-align: center;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.menu .title {
+    width: 90rpx;
+    height: 34rpx;
+    line-height: 34rpx;
+}
+
+.menu cover-image {
+    padding: 10rpx;
+    width: 70rpx;
+    height: 60rpx;
+}
+
+camera {
+    width: 750rpx;
+    height: 100vh;
+}
+
+@-webkit-keyframes colorful {
+    0% {
+        background: #ff0;
+    }
+
+    25% {
+        background: red;
+    }
+
+    50% {
+        background: green;
+    }
+
+    75% {
+        background: #00f;
+    }
+
+    to {
+        background: #ff0;
+    }
+}
+
+@keyframes colorful {
+    0% {
+        background: #ff0;
+    }
+
+    25% {
+        background: red;
+    }
+
+    50% {
+        background: green;
+    }
+
+    75% {
+        background: #00f;
+    }
+
+    to {
+        background: #ff0;
+    }
+}
+
+@-webkit-keyframes white {
+    0%,50%,to {
+        opacity: 0;
+        background: #fff;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #fff;
+    }
+}
+
+@keyframes white {
+    0%,50%,to {
+        opacity: 0;
+        background: #fff;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #fff;
+    }
+}
+
+@-webkit-keyframes yellow {
+    0%,50%,to {
+        opacity: 0;
+        background: #ff0;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #ff0;
+    }
+}
+
+@keyframes yellow {
+    0%,50%,to {
+        opacity: 0;
+        background: #ff0;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #ff0;
+    }
+}
+
+@-webkit-keyframes red {
+    0%,50%,to {
+        opacity: 0;
+        background: red;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: red;
+    }
+}
+
+@keyframes red {
+    0%,50%,to {
+        opacity: 0;
+        background: red;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: red;
+    }
+}
+
+@-webkit-keyframes blue {
+    0%,50%,to {
+        opacity: 0;
+        background: #00f;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #00f;
+    }
+}
+
+@keyframes blue {
+    0%,50%,to {
+        opacity: 0;
+        background: #00f;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #00f;
+    }
+}
+
+@-webkit-keyframes purple {
+    0%,50%,to {
+        opacity: 0;
+        background: #96c;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #96c;
+    }
+}
+
+@keyframes purple {
+    0%,50%,to {
+        opacity: 0;
+        background: #96c;
+    }
+
+    25%,75% {
+        opacity: .8;
+        background: #96c;
+    }
+}
+
+@-webkit-keyframes vip_1 {
+    0% {
+        background: #090012;
+    }
+
+    25% {
+        background: #3b1574;
+    }
+
+    50% {
+        background: #2c32b9;
+    }
+
+    75% {
+        background: #b7b4f9;
+    }
+
+    to {
+        background: #9937f1;
+    }
+}
+
+@keyframes vip_1 {
+    0% {
+        background: #090012;
+    }
+
+    25% {
+        background: #3b1574;
+    }
+
+    50% {
+        background: #2c32b9;
+    }
+
+    75% {
+        background: #b7b4f9;
+    }
+
+    to {
+        background: #9937f1;
+    }
+}
+
+@-webkit-keyframes vip_2 {
+    0% {
+        background: #631615;
+    }
+
+    20% {
+        background: #ce2839;
+    }
+
+    40% {
+        background: #ffd600;
+    }
+
+    60% {
+        background: #f6b7bc;
+    }
+
+    80% {
+        background: #e14c82;
+    }
+
+    to {
+        background: #fff;
+    }
+}
+
+@keyframes vip_2 {
+    0% {
+        background: #631615;
+    }
+
+    20% {
+        background: #ce2839;
+    }
+
+    40% {
+        background: #ffd600;
+    }
+
+    60% {
+        background: #f6b7bc;
+    }
+
+    80% {
+        background: #e14c82;
+    }
+
+    to {
+        background: #fff;
+    }
+}
+
+@-webkit-keyframes vip_3 {
+    0% {
+        background: #091100;
+    }
+
+    25% {
+        background: #3f7b00;
+    }
+
+    50% {
+        background: #4de900;
+    }
+
+    75% {
+        background: #e7ff00;
+    }
+
+    to {
+        background: #ffff95;
+    }
+}
+
+@keyframes vip_3 {
+    0% {
+        background: #091100;
+    }
+
+    25% {
+        background: #3f7b00;
+    }
+
+    50% {
+        background: #4de900;
+    }
+
+    75% {
+        background: #e7ff00;
+    }
+
+    to {
+        background: #ffff95;
+    }
+}
+
+@-webkit-keyframes rise {
+    0% {
+        transform: translateY(200rpx);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(200rpx);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(200rpx);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(200rpx);
+    }
+}

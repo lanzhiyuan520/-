@@ -1,0 +1,24 @@
+<nav bgColor="transparent"></nav>
+<view class="game-wrap page {{'player-'+playerNo}} flex column" style="padding-top: {{statusBarHeight}}px;">
+    <view class="title">请玩家{{playerNo===1?'一':'二'}}画线</view>
+    <view class="result flex">{{result[0]}}:{{result[1]}}<image bindtap="onAgain" class="btn-again" src="/square/assets/btn_again.png"></image>
+    </view>
+    <view class="dot-wrap flex">
+        <view class="inner-wrap" id="dotWrap">
+            <view class="square-wrap flex">
+                <view class="square-item" style="width: {{100/(size-1)}}%; padding-top: {{100/(size-1)}}%" wx:for="{{squares}}" wx:key="index">
+                    <image class="flag-img" src="/square/assets/flag_{{item.win}}.png" wx:if="{{item.win!==0}}"></image>
+                </view>
+            </view>
+            <view class="line-item" style="width: {{item.width}}px; height: {{item.height}}px; background-color: {{item.bg}}; left: {{item.left}}px; top: {{item.top}}px;" wx:for="{{lines}}" wx:key="index"></view>
+            <block wx:for="{{dots}}" wx:for-index="outerIdx" wx:for-item="outer" wx:key="{{outerIdx}}">
+                <view bindtap="onSelectedDot" class="dot-item {{inner.style}}" id="dot-{{outerIdx}}-{{innerIdx}}" style="top: calc({{100/(size-1)*outerIdx+'%'}} - {{RADIUS/2}}px); left: calc({{100/(size-1)*innerIdx+'%'}} - {{RADIUS/2}}px)" wx:for="{{outer}}" wx:for-index="innerIdx" wx:for-item="inner" wx:key="{{innerIdx}}"></view>
+            </block>
+        </view>
+    </view>
+    <view class="flex" wx:if="{{isEnd}}">
+        <view bindtap="onAgain" class="btn-primary">再来一局</view>
+        <view bindtap="onPunishment" class="btn-primary punishment">选择惩罚</view>
+    </view>
+</view>
+<ad-modal id="adModal"></ad-modal>
